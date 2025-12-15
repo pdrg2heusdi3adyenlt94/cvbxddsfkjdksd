@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>YOUR NAME — Portfolio</title>
-  <meta name="description" content="Portfolio of YOUR NAME — developer / designer / creator." />
+  <title>홍길동 — 포트폴리오</title>
+  <meta name="description" content="홍길동의 포트폴리오 — 웹 개발자, 반응형 웹 및 접근성 전문" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -13,14 +13,14 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#hero">YOUR NAME</a>
+      <a class="brand" href="#hero">홍길동</a>
 
       <nav class="nav" id="main-nav" aria-label="Main Navigation">
         <ul class="nav-list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">소개</a></li>
+          <li><a href="#projects">프로젝트</a></li>
+          <li><a href="#skills">기술</a></li>
+          <li><a href="#contact">연락</a></li>
         </ul>
       </nav>
 
@@ -34,54 +34,54 @@
   <main>
     <section id="hero" class="hero container">
       <div class="hero-content">
-        <h1>Hi — I'm <span class="accent">YOUR NAME</span></h1>
-        <p class="lead">I build clean, accessible websites and web apps. Replace this with a short sentence about what you do and who you help.</p>
+        <h1>안녕하세요 — 저는 <span class="accent">홍길동</span>입니다</h1>
+        <p class="lead">접근성 있고 반응형인 웹 사이트와 웹 애플리케이션을 만듭니다. 간단한 소개 문구를 여기에 넣으세요.</p>
         <div class="hero-cta">
-          <a class="btn primary" href="#projects">See my work</a>
-          <a class="btn outline" href="resume.pdf" download>Download Resume</a>
+          <a class="btn primary" href="#projects">작업 보러가기</a>
+          <a class="btn outline" href="resume.pdf" download>이력서 다운로드</a>
         </div>
       </div>
       <figure class="hero-photo" aria-hidden="true">
-        <!-- Replace src with your photo -->
-        <img src="assets/profile.jpg" alt="Photo of YOUR NAME" />
+        <!-- 프로필 사진을 assets/profile.jpg에 넣으세요 -->
+        <img src="assets/profile.jpg" alt="홍길동의 사진" />
       </figure>
     </section>
 
     <section id="about" class="container about">
-      <h2>About</h2>
-      <p>Write a short paragraph about yourself — background, specialties, current focus, or what you're looking for. Keep it concise and friendly.</p>
+      <h2>소개</h2>
+      <p>저는 프론트엔드 중심의 웹 개발자입니다. 사용자 경험과 접근성을 중요하게 생각하며, 간결하고 유지보수 가능한 코드를 지향합니다.</p>
       <ul class="contact-meta">
-        <li><strong>Location:</strong> City, Country</li>
-        <li><strong>Email:</strong> <a href="mailto:you@example.com">you@example.com</a></li>
-        <li><strong>Role:</strong> Developer / Designer / Other</li>
+        <li><strong>위치:</strong> Seoul, Korea</li>
+        <li><strong>이메일:</strong> <a href="mailto:hong@example.com">hong@example.com</a></li>
+        <li><strong>역할:</strong> 웹 개발자</li>
       </ul>
     </section>
 
     <section id="projects" class="container projects">
-      <h2>Selected Projects</h2>
-      <p class="section-note">Click a card to view details or visit the repo / live demo.</p>
+      <h2>선택된 프로젝트</h2>
+      <p class="section-note">카드를 클릭하여 상세 정보를 보거나 데모/레포로 이동하세요.</p>
 
       <div class="grid projects-grid">
         <!-- Project 1 -->
         <article class="card">
-          <a class="card-link" href="https://example.com/project-1" target="_blank" rel="noopener">
-            <img class="card-img" src="assets/project-1.png" alt="Screenshot of Project 1">
+          <a class="card-link" href="#" target="_blank" rel="noopener">
+            <img class="card-img" src="assets/project-1.png" alt="프로젝트 1 스크린샷">
             <div class="card-body">
-              <h3>Project One</h3>
-              <p class="muted">A short 1–2 sentence description of the project and your role.</p>
-              <p class="tags"><span>React</span><span>API</span><span>CSS</span></p>
+              <h3>프로젝트 하나</h3>
+              <p class="muted">간단한 설명: 반응형 웹 앱 및 접근성 개선 작업 수행.</p>
+              <p class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></p>
             </div>
           </a>
         </article>
 
         <!-- Project 2 -->
         <article class="card">
-          <a class="card-link" href="https://github.com/yourusername/project-2" target="_blank" rel="noopener">
-            <img class="card-img" src="assets/project-2.png" alt="Screenshot of Project 2">
+          <a class="card-link" href="#" target="_blank" rel="noopener">
+            <img class="card-img" src="assets/project-2.png" alt="프로젝트 2 스크린샷">
             <div class="card-body">
-              <h3>Project Two</h3>
-              <p class="muted">Short description — problem solved, impact, or tech used.</p>
-              <p class="tags"><span>Node.js</span><span>Postgres</span></p>
+              <h3>프로젝트 둘</h3>
+              <p class="muted">백엔드와 연동된 SPA 예시 프로젝트.</p>
+              <p class="tags"><span>React</span><span>API</span></p>
             </div>
           </a>
         </article>
@@ -89,10 +89,10 @@
         <!-- Project 3 -->
         <article class="card">
           <a class="card-link" href="#" target="_blank" rel="noopener">
-            <img class="card-img" src="assets/project-3.png" alt="Screenshot of Project 3">
+            <img class="card-img" src="assets/project-3.png" alt="프로젝트 3 스크린샷">
             <div class="card-body">
-              <h3>Project Three</h3>
-              <p class="muted">Short description — what this project does.</p>
+              <h3>프로젝트 셋</h3>
+              <p class="muted">디자인 시스템 및 컴포넌트 라이브러리 작업.</p>
               <p class="tags"><span>Design</span><span>Accessibility</span></p>
             </div>
           </a>
@@ -101,52 +101,52 @@
     </section>
 
     <section id="skills" class="container skills">
-      <h2>Skills</h2>
-      <p class="muted">Technologies, tools, and areas of expertise.</p>
+      <h2>기술</h2>
+      <p class="muted">사용 가능한 기술과 도구들입니다.</p>
       <ul class="skill-list">
         <li>JavaScript (ES6+)</li>
         <li>React / Next.js</li>
         <li>HTML & CSS / Tailwind</li>
         <li>Node.js & Express</li>
         <li>SQL / PostgreSQL</li>
-        <li>Accessibility & Performance</li>
+        <li>접근성(Accessibility) & 성능</li>
       </ul>
     </section>
 
     <section id="contact" class="container contact">
-      <h2>Contact</h2>
-      <p>I'm available for freelance or full-time opportunities. Send me a message — or email at <a href="mailto:you@example.com">you@example.com</a>.</p>
+      <h2>연락</h2>
+      <p>프리랜서나 정규직 기회를 찾고 있습니다. 메일로 연락 주세요: <a href="mailto:hong@example.com">hong@example.com</a>.</p>
 
       <form id="contact-form" class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
         <label>
-          <span>Name</span>
+          <span>이름</span>
           <input name="name" type="text" required />
         </label>
 
         <label>
-          <span>Email</span>
+          <span>이메일</span>
           <input name="_replyto" type="email" required />
         </label>
 
         <label>
-          <span>Message</span>
+          <span>메시지</span>
           <textarea name="message" rows="5" required></textarea>
         </label>
 
         <input type="hidden" name="_subject" value="Portfolio message" />
-        <button type="submit" class="btn primary">Send message</button>
-        <p class="muted small">Or email me directly: <a href="mailto:you@example.com">you@example.com</a></p>
+        <button type="submit" class="btn primary">메시지 보내기</button>
+        <p class="muted small">또는 직접 이메일: <a href="mailto:hong@example.com">hong@example.com</a></p>
       </form>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> YOUR NAME — Built with care.</p>
+      <p>© <span id="year"></span> 홍길동 — 제작자.</p>
       <div class="social">
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://github.com/hong" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/hong" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://twitter.com/hong" target="_blank" rel="noopener">Twitter</a>
       </div>
     </div>
   </footer>
