@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>YOUR NAME — Portfolio</title>
+  <meta name="description" content="Portfolio of YOUR NAME — developer / designer / creator." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#0b1220" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero">YOUR NAME</a>
+
+      <nav class="nav" id="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="controls">
+        <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <button id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero container">
+      <div class="hero-content">
+        <h1>Hi — I'm <span class="accent">YOUR NAME</span></h1>
+        <p class="lead">I build clean, accessible websites and web apps. Replace this with a short sentence about what you do and who you help.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#projects">See my work</a>
+          <a class="btn outline" href="resume.pdf" download>Download Resume</a>
+        </div>
+      </div>
+      <figure class="hero-photo" aria-hidden="true">
+        <!-- Replace src with your photo -->
+        <img src="assets/profile.jpg" alt="Photo of YOUR NAME" />
+      </figure>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About</h2>
+      <p>Write a short paragraph about yourself — background, specialties, current focus, or what you're looking for. Keep it concise and friendly.</p>
+      <ul class="contact-meta">
+        <li><strong>Location:</strong> City, Country</li>
+        <li><strong>Email:</strong> <a href="mailto:you@example.com">you@example.com</a></li>
+        <li><strong>Role:</strong> Developer / Designer / Other</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h2>Selected Projects</h2>
+      <p class="section-note">Click a card to view details or visit the repo / live demo.</p>
+
+      <div class="grid projects-grid">
+        <!-- Project 1 -->
+        <article class="card">
+          <a class="card-link" href="https://example.com/project-1" target="_blank" rel="noopener">
+            <img class="card-img" src="assets/project-1.png" alt="Screenshot of Project 1">
+            <div class="card-body">
+              <h3>Project One</h3>
+              <p class="muted">A short 1–2 sentence description of the project and your role.</p>
+              <p class="tags"><span>React</span><span>API</span><span>CSS</span></p>
+            </div>
+          </a>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card">
+          <a class="card-link" href="https://github.com/yourusername/project-2" target="_blank" rel="noopener">
+            <img class="card-img" src="assets/project-2.png" alt="Screenshot of Project 2">
+            <div class="card-body">
+              <h3>Project Two</h3>
+              <p class="muted">Short description — problem solved, impact, or tech used.</p>
+              <p class="tags"><span>Node.js</span><span>Postgres</span></p>
+            </div>
+          </a>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="card">
+          <a class="card-link" href="#" target="_blank" rel="noopener">
+            <img class="card-img" src="assets/project-3.png" alt="Screenshot of Project 3">
+            <div class="card-body">
+              <h3>Project Three</h3>
+              <p class="muted">Short description — what this project does.</p>
+              <p class="tags"><span>Design</span><span>Accessibility</span></p>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="container skills">
+      <h2>Skills</h2>
+      <p class="muted">Technologies, tools, and areas of expertise.</p>
+      <ul class="skill-list">
+        <li>JavaScript (ES6+)</li>
+        <li>React / Next.js</li>
+        <li>HTML & CSS / Tailwind</li>
+        <li>Node.js & Express</li>
+        <li>SQL / PostgreSQL</li>
+        <li>Accessibility & Performance</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <p>I'm available for freelance or full-time opportunities. Send me a message — or email at <a href="mailto:you@example.com">you@example.com</a>.</p>
+
+      <form id="contact-form" class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+        <label>
+          <span>Name</span>
+          <input name="name" type="text" required />
+        </label>
+
+        <label>
+          <span>Email</span>
+          <input name="_replyto" type="email" required />
+        </label>
+
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+
+        <input type="hidden" name="_subject" value="Portfolio message" />
+        <button type="submit" class="btn primary">Send message</button>
+        <p class="muted small">Or email me directly: <a href="mailto:you@example.com">you@example.com</a></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> YOUR NAME — Built with care.</p>
+      <div class="social">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
